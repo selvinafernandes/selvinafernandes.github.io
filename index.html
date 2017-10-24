@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>SASS Project</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400" rel="stylesheet">	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<nav class="navigation">
+			<div class="navigation__menu">
+				<div class="navigation__menu--item">
+					<a class="navigation__link--home active" href="#home">HOME</a>
+				</div>
+				<div class="navigation__menu--item">
+					<a class="navigation__link--about" href="#about">ABOUT</a>
+				</div>
+				<div class="navigation__menu--item">
+					<a class="navigation__link--projects" href="#projects">PROJECTS</a>
+				</div>
+			</div>
+			<div class="navigation__social">
+				<p class="navigation__social__list--greet">Lets Connect!</p>
+				<div class="navigation__social__list">	
+					<div class="navigation__social__list--item">
+						<a target="_blank" href="https://www.linkedin.com/in/selvina-fernandes-020b58a5/" class="fa fa-linkedin social"></a>
+					</div>
+					<div class="navigation__social__list--item">
+						<a target="_blank" href="https://github.com/selvinafernandes" class="fa fa-github-alt social"></a>
+					</div>
+				</div>
+			</div>
+			<div class="navigation__toggle" onclick="toggleNav(this)">
+				<span class="navigation__toggle--icon icon__1"></span>
+				<span class="navigation__toggle--icon icon__2"></span>
+				<span class="navigation__toggle--icon icon__3"></span>
+			</div>
+		</nav>
+
+		<section id="home" class="home">
+			<div class="home__top">
+			</div>
+			<div class="home__title">
+				<div class="home__title--greet">Hi I am</div>
+				<div class="home__title--name">Selvina Fernandes</div>
+				<div class="home__title--greet">Front-end Developer</div>
+			</div>
+			<div class="home__bottom">
+				<div class="home__bottom--left">	
+				</div>
+				<div class="home__bottom--right">
+				</div>
+				<div class="home__bottom--arrow">
+					<a class="arrow down homearrow"></a>
+				</div>
+			</div>
+		</section>		
+	
+		<section id="about" class="about">
+			<div class="about__arrow--top">
+				<a class="arrow up aboutarrow"></a>
+			</div>
+			<div class="about__top">
+			</div>
+			<div class="about__photo"></div>
+			<div class="about__desc">
+			<h3 class="about__desc--greeting">Nice to meet you</h3>
+			<span class="about__desc--me">
+				Software Developer with almost 7 years of experience in application development and 
+				production support projects. 
+				Extensive knowledge in requirement gathering, analysis, design, development, implementation,
+				testing, documentation and maintenance of mainframe applications. Have the potential to work
+				across different applications. Have the ability to analyze existing systems, identify and
+				provide solutions for recurring issues and perform disaster recovery exercises. Accustomed to
+				handling critical tasks under deadline driven environment.
+				Conducted brainstorming sessions to gather and refine project requirement and changes.
+				Responsible for coordinating with clients for multiple projects from inception to completion.
+			</span>
+			<span class=about__desc--sheading>Skills</span>
+			<span class="about__desc--skills">
+				<!-- HTML, CSS & Javascript -->
+				<span class="about__desc--htmlicon">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+				<span class="projects__tech--cssicon">
+					<i class="fa fa-css3" aria-hidden="true"></i>
+				</span>
+				<span class="projects__tech--jscript">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+				<span class="projects__tech--gulp">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+				<span class="projects__tech--grunt">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+				<span class="projects__tech--sass">
+					<i class="fa fa-html5" aria-hidden="true"></i>
+				</span>
+			</span>
+			</div>
+			<div class="about__arrow--bottom">
+				<a class="arrow down aboutarrow"></a>
+			</div>	
+		</section>
+		<section id="projects" class="projects">
+			<div class="projects__arrow--top">
+				<a class="arrow up projectsarrow"></a>
+			</div>
+			<div class="projects__top">
+			</div>
+			<h2 class="projects__title">projects</h2>
+			<div class="projects__grid">
+				<div class="projects__grid__sidebar1" id="sidebar-left">
+					<a class="arrow left projectsarrow"></a>
+				</div>
+				<div class="projects__grid__list" id="grid_list">
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+					<div class="projects__grid__list--item">
+						<a class="item--title"></a>
+					</div>
+				</div>
+				<div class="projects__grid__sidebar2" id="sidebar-right">
+					<a class="arrow right projectsarrow"></a>
+				</div>
+			</div>
+			<div class="projects__popup hidden" id="popup">
+				<div class="projects__close">
+					<span class="projects__close--button" id="close">&times;</span>
+				</div>
+				<span class="projects__name">Lorem Ipsum</span>
+				<div class="projects__content">
+					<img class="projects__image"/>
+					<div class="projects__desc">
+						<span class="projects__desc--para">
+						</span>
+						<div class="projects__desc--skills">
+							<h4 class="projects__skills">Tech Used</h4>
+							<span class="projects__tech">
+								HTML, CSS & Javascript
+							</span>
+						</div>
+						<!-- <div class="projects__desc--social">
+						<div class="project__icons">
+							<a href="#" class="fa fa-linkedin social"></a>
+							<span>View online</span>
+						</div>
+						<div class="project__icons">
+							<a href="#" class="fa fa-github-alt social"></a>
+							<span>View on Github</span>
+						</div>
+						</div> -->
+					</div>	
+				</div>
+			</div>
+		</section>
+		<script type="text/javascript" src="index.js"></script>	
+		<script type="text/javascript" src="projects.js"></script>	
+	</body>
+</html>
